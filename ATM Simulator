@@ -13,11 +13,11 @@ class ATM:
             else:
                 attempts -= 1
                 print(f" Incorrect PIN. Attempts left: {attempts}")
-        print("🔒 Card blocked.")
+        print(" Card blocked.")
         return False
 
     def check_balance(self):
-        print(f"💰 Current balance: ${self.balance}")
+        print(f" Current balance: ${self.balance}")
 
     def deposit(self):
         amount = float(input("Enter deposit amount: "))
@@ -33,7 +33,7 @@ class ATM:
             self.balance -= amount
             print(f"✅ Withdrawn ${amount}")
         else:
-            print(" Insufficient funds or invalid amount")
+            print(" brokie or invalid amount")
 
     def menu(self):
         while True:
